@@ -1,0 +1,277 @@
+@import "reset.sass"
+
+html,body
+    height: 100%
+    background-color: rgb(230,230,230)
+
+// Header e chamada-header
+header
+    background-image: url("../images/bg.jpg")
+    min-height: 600px
+    padding: 30px 0
+    background-size: cover
+    background-position: center
+
+    .logo
+        float: left
+        width: 132px
+        height: 20px
+        position: relative
+        z-index: 2
+
+nav.desktop
+    float: right
+    li
+        display: inline-block
+
+    a
+        color: #fff
+        margin: 0 10px
+        font-size: 15px
+
+.btn-nav
+    padding: 3px 10px
+    border: 1px solid #fff
+    border-radius: 20px
+
+nav.mobile
+    display: none
+    float: right
+    h3
+        color: #fff
+        font-size: 26px
+        cursor: pointer
+        position: relative
+        z-index: 2
+
+    ul
+        display: none
+        position: absolute
+        padding: 70px 0 30px 0
+        top: 0px
+        left: 0
+        width: 100%
+        background-color: #31475e
+        text-align: center
+        li
+            padding: 10px 0
+            a
+                color: #fff
+                display: block
+        .btn-nav
+            display: inline-block
+            padding: 4px 10px
+
+div.chamada-header
+    padding: 110px
+    color: #fff
+    h2
+        font-size: 36px
+        font-weight: normal
+    p
+        font-size: 15px
+        max-width: 400px
+        margin-top: 10px
+    form
+        margin-top: 10px
+        input[type=email], input[type=submit]
+            display: inline-block
+            border-radius: 20px
+            height: 35px
+            border: 0
+        input[type=email]
+            width: 237px
+            outline: none
+            padding-left: 10px
+        input[type=submit]
+            color: #fff
+            background-color: #ff5f27
+            cursor: pointer
+            width: 200px
+            font-size: 15px
+            text-transform: uppercase
+            &:hover
+                opacity: 0.6
+
+section.descricao
+    text-align: center
+    padding: 30px 0
+
+    p
+        font-weight: lighter
+        font-size: 22px
+        font-style: italic
+        display: inline-block
+        max-width: 680px
+
+section.descricao-danki
+    padding: 40px 0
+    width: 100%
+    .container
+        max-width: 960px
+
+    .descricao__texto
+        float: left
+        width: 50%
+        h3
+            color: #31475e
+            font-size: 22px
+            line-height: 32px
+            font-weight: normal
+
+        p
+            margin-top: 15px
+            color: #6a7c92
+            font-size: 15px
+            line-height: 25px
+
+    img
+        float: left
+        width: 50%
+        max-width: 500px
+
+section.descricao-danki-2
+    padding: 30px 0 60px 0
+    .container
+        max-width: 960px
+        background-image: url(../images/bg2.jpg)
+        background-size: cover
+        min-height: 350px
+        position: relative
+        margin-bottom: 50px
+        height: auto
+        .box-depoimento
+            position: absolute
+            background-color: #fff
+            box-shadow: 0 8px 20px 0 rgba(224 , 224, 224, 0.5)
+            left: 40%
+            bottom: -20px
+            width: 50%
+            max-width: 500px
+            padding: 20px 40px
+            p
+                font-size: 18px
+                color: #31475e
+                font-weight: lighter
+
+section.servicos
+    padding: 25px 0
+    .container
+        max-width: 960px
+        .servicos__title
+            text-align: center
+            h3
+                color: #31475e
+                font-size: 22px
+                font-weight: normal
+                i
+                    cursor: pointer
+        .servicos__box
+            display: flex
+            flex-wrap: wrap
+            .box__single
+                background: #fff
+                width: 33.3%
+                border-radius: 6px
+                box-shadow: 0 8px 20px 0 rgba(224 , 224, 224, 0.5)
+                border: 5px solid rgb(230,230 ,230 )
+                img
+                    width: 100%
+                .box__wraper
+                    padding: 30px
+                h3
+                    color: #31475e
+                    font-size: 20px
+                    font-weight: normal
+                p
+                    font-weight: normal
+                    font-size: 15px
+                    color: #6a7c92
+                    line-height: 1.6
+                    margin: 8px 0
+                a
+                    display: inline-block
+                    padding: 6px 12px
+                    border: 1px solid #6a7c92
+                    border-radius: 20px
+                    color: #6a7c92
+
+@media screen and (max-width: 1024px)
+    section.descricao-danki-2
+        .container
+            min-height: 400px
+
+            .box-depoimento
+                position: absolute
+                left: 50%
+                top: 50%
+                bottom: auto
+                transform: translate(-50%, -50%)
+                width: 80%
+                max-width: 500px
+                padding: 20px 40px
+                p
+                    font-size: 14px
+
+@media screen and (max-width:768px)
+    nav.desktop
+        display: none
+    nav.mobile
+        display: block
+
+    div.chamada-header
+        text-align: center
+        input[type=email]
+            margin-bottom: 20px
+
+    section.descricao-danki
+        .descricao__texto
+            width: 100%
+            text-align: center
+            float: none
+        img
+            width: 100%
+            float: none
+            margin: 0 auto
+            display: block
+            margin-top: 10px
+
+    section.descricao-danki-2
+        .container
+            .box-depoimento
+                width: 80%
+                max-width: 500px
+                padding: 20px 40px
+                p
+                    font-size: 14px
+
+    section.servicos
+        .container
+            .servicos__box
+                .box__single
+                    width: 50%
+
+@media screen and (max-width:480px)
+    div.chamada-header
+        h2
+            font-size: 28px
+
+    section.descricao-danki-2
+        .container
+            .box-depoimento
+                width: 70% // Garante que a box não fique maior que a tela
+                padding: 10px 30px
+                bottom: 5px
+                text-align: center // Mantém o texto organizado
+                word-wrap: break-word
+                height: auto
+                p
+                    font-size: 12px
+
+    section.servicos
+        .container
+            .servicos__box
+                .box__single
+                    width: 80%
+
+                    margin: 0 auto
