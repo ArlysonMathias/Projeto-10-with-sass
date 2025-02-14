@@ -341,8 +341,15 @@ section.contato {
     max-width: 540px;
     margin: 15px auto; } }
 @media screen and (max-width: 480px) {
-  div.chamada-header h2 {
-    font-size: 28px; }
+  div.chamada-header {
+    padding: 50px;
+    display: inline-block; }
+    div.chamada-header h2 {
+      font-size: 22px; }
+    div.chamada-header p {
+      font-size: 13px; }
+    div.chamada-header input[type=email] {
+      max-width: 200px; }
 
   section.descricao-danki-2 .container .box-depoimento {
     width: 70%;
@@ -359,6 +366,15 @@ section.contato {
     margin: 0 auto; }
 
   section.portfolio .container .portfolio__empresas .portfolio__empresas-single {
-    width: 100%; } }
+    width: 100%; }
+
+  section.contato .container form .form-group input[type=text], section.contato .container form .form-group input[type=email], section.contato .container form .form-group input[type=number], section.contato .container form .form-group select {
+    font-size: 14px; }
+  section.contato .container form .form-group input[type=email] {
+    font-size: 14px; }
+  section.contato .container form .form-group input[type=number] {
+    font-size: 14px; }
+  section.contato .container form .form-group textarea {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=style.css.map */
