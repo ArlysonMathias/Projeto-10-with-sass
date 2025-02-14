@@ -2,7 +2,7 @@
 
 ## Descrição
 
-> Este projeto foi desenvolvido para fins educacionais com o intuito de treinar e trabalhar conceitos JS, Sass.
+> Este projeto foi desenvolvido para fins educacionais com o intuito de treinar e trabalhar conceitos JS, Sass, sendo desenvolvido com base em um projeto da Agencia DankCode.
 
 ## Autor
 
