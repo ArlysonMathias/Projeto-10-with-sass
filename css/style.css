@@ -206,6 +206,32 @@ section.servicos {
           border-radius: 20px;
           color: #6a7c92; }
 
+section.portfolio {
+  padding: 40px 0; }
+  section.portfolio .container {
+    max-width: 960px;
+    background-color: #f7f7f7;
+    padding: 15px 0; }
+    section.portfolio .container h2 {
+      color: #31475e;
+      font-weight: normal;
+      text-align: center; }
+    section.portfolio .container .portfolio__empresas {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 10px; }
+      section.portfolio .container .portfolio__empresas .portfolio__empresas-single {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        border-width: 1px 0 1px 1px;
+        border-color: #ececec;
+        border-style: solid;
+        padding: 10px 0; }
+        section.portfolio .container .portfolio__empresas .portfolio__empresas-single::last-child {
+          border: 1px solid #ececec; }
+
 @media screen and (max-width: 1024px) {
   section.descricao-danki-2 .container {
     min-height: 400px; }
@@ -251,7 +277,12 @@ section.servicos {
       font-size: 14px; }
 
   section.servicos .container .servicos__box .box__single {
-    width: 50%; } }
+    width: 50%; }
+
+  section.portfolio .container .portfolio__empresas .portfolio__empresas-single {
+    width: 50%;
+    max-width: 540px;
+    margin: 15px auto; } }
 @media screen and (max-width: 480px) {
   div.chamada-header h2 {
     font-size: 28px; }
@@ -268,6 +299,9 @@ section.servicos {
 
   section.servicos .container .servicos__box .box__single {
     width: 80%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  section.portfolio .container .portfolio__empresas .portfolio__empresas-single {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
